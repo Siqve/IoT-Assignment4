@@ -21,10 +21,6 @@ public class MQTTPublisherController {
 
 	protected MqttClient publisherClient;
 	
-	public MQTTPublisherController() {
-		System.out.println("[CONTROLLER PUB] Thread id: " + Thread.currentThread().getId());
-	}
-
 	public void publish(boolean activate) throws MqttPersistenceException, MqttException, InterruptedException {
 		System.out.println("Publishing to " + topic + ": " + activate);
 		

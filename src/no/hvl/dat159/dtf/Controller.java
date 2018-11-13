@@ -13,7 +13,6 @@ public class Controller implements Runnable {
 	
 	
 	public Controller(double minTemp, double maxTemp) {
-		System.out.println("[CONTROLLER] Thread id: " + Thread.currentThread().getId());
 		this.minTemp = minTemp;
 		this.maxTemp = maxTemp;
 	}
@@ -39,7 +38,6 @@ public class Controller implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("runnyrun");
 		publisher = new MQTTPublisherController();
 	}
 	
